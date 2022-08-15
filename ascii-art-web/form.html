@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link rel="stylesheet" href="/static/style.css" />
+    <meta charset="UTF-8">
+    <title>Form</title>
+</head>
+
+<body>
+    <div class="LogoImage">
+
+        <img src="/static/ascii art coloured.png" alt=",Logo">
+
+    </div>
+        <br>
+        <br>
+        <br>
+        <form method="POST" action="/">
+            <div class="Form">
+                <label>Enter text here:</label><input name="text" type="text" style="width: 260px;">
+            </div>
+            <br>
+            <div class="Form">
+                <span class="Banner">
+                    <input type="radio" id="standard" name="font" value="standard">
+                    <label for="standard">standard</label>
+                    <input type="radio" id="thinkertoy" name="font" value="thinkertoy">
+                    <label for="thinkertoy">thinkertoy</label>
+                    <input type="radio" id="shadow" name="font" value="shadow">
+                    <label for="shadow">shadow</label>
+                </span>
+
+                <br>
+
+                <div class="SubmitResult">
+
+                    <input type="submit" onclick="showInput();">
+                    
+                </div>
+                
+                <div class="SubmitResult">
+                    <br>
+                    <label>Result: </label>
+                    <span id='display'></span>
+                    <pre style="margin-top: 0vh;">{{ . }}
+        </form>
+
+    </div>
+
+</body>
+
+</html>
